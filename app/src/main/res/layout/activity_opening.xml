@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/home_background"
+    tools:context=".opening">
+
+    <carbon.widget.ImageView
+        android:id="@+id/menu_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menu"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true" />
+
+    <carbon.widget.TextView
+        android:id="@+id/User_name_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/menu_home"
+        android:text="Hi, Anurag"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/main_font" />
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/User_name_home"
+        android:text="What are you looking today?"
+        android:textColor="@color/carbon_lightBlue_a200"
+        android:textSize="15sp" />
+
+
+    <carbon.widget.ImageView
+        android:id="@+id/notification_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/out"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toStartOf="@+id/profile_home" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/profile_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentEnd="true" />
+
+    <carbon.widget.EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search items"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/User_name_home"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:textColor="#697D87"
+        android:textSize="16sp"
+        android:imeOptions="actionSearch"
+        app:carbon_cornerRadius="17dp"
+        app:carbon_elevation="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent"/>
+
+    <carbon.widget.ImageView
+        android:id="@+id/search_home"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/User_name_home"
+        android:src="@drawable/search_icon"
+        app:carbon_elevation="8dp"
+        app:carbon_elevationShadowColor="@color/black" />
+
+    <carbon.widget.ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        app:carbon_elevation="10dp"
+        app:carbon_elevationShadowColor="@color/black"
+        android:id="@+id/addItems"/>
+
+
+</RelativeLayout>

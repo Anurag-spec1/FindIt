@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".Login">
+
+        <carbon.widget.TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="108dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.TextView
+            android:id="@+id/login_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/main_font"
+            android:text="Let's get started to find your object"
+            android:textColor="#697D87"
+            android:textSize="15sp" />
+
+        <carbon.widget.TextView
+            android:id="@+id/User_email_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_child"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="50dp"
+            android:text="Your Email"
+            android:textColor="#697D87"
+            android:textSize="16sp" />
+
+        <carbon.widget.EditText
+            android:id="@+id/User_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/User_email_child"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/white"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:hint="anurag@kiet.edu"
+            android:textSize="17sp"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_elevation="6dp"
+            app:carbon_elevationShadowColor="@color/carbon_black" />
+
+        <carbon.widget.TextView
+            android:id="@+id/User_pass_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/User_email"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="27dp"
+            android:text="Password"
+            android:textSize="16sp"
+            android:textColor="#697D87" />
+
+        <carbon.widget.EditText
+            android:id="@+id/User_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/User_pass_child"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/white"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:hint="************"
+            android:textSize="17sp"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_elevation="6dp"
+            app:carbon_elevationShadowColor="@color/carbon_black" />
+
+        <TextView
+            android:id="@+id/Forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/User_pass"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:text="Forget password?"
+            android:textColor="#697D87"
+            android:textSize="16sp" />
+
+        <carbon.widget.Button
+            android:id="@+id/Button_login"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/Forget_pass"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="#19AEFD"
+            android:text="Log in"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:carbon_cornerRadius="13dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yadrakhparent"
+        android:layout_below="@+id/Button_login"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/yadrakh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember user"
+            android:textColor="@color/black"
+            android:fontFamily="@font/main_font"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yadrakhparent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:text="Or login with"
+                android:textColor="#697D87"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:gravity="center">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Do not have an account?"
+                android:textColor="#697D87" />
+
+            <carbon.widget.TextView
+                android:id="@+id/SignUp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:textSize="17sp"
+                android:text="Sign Up"
+                android:textColor="#07A1F6"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

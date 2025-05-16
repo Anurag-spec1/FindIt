@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_background"
+    tools:context=".MainActivity">
+
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="52dp">
+
+
+
+        <carbon.widget.ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            app:carbon_cornerRadius="6dp"
+            app:carbon_rippleStyle="background" />
+
+        <carbon.widget.TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@id/backBtn"
+            android:autoSizeMaxTextSize="22sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/main_font"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Report Lost Item"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </carbon.widget.RelativeLayout>
+
+    <carbon.widget.ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/plus"
+        android:padding="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        app:carbon_cornerRadius="30dp"
+        app:carbon_elevation="30dp"
+        android:scaleType="centerCrop"
+        android:background="@color/white" />
+
+    <carbon.widget.EditText
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="25dp"
+        android:paddingStart="15dp"
+        android:hint="Item Name"
+        android:textSize="17sp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+    <carbon.widget.EditText
+        android:id="@+id/itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:hint="Item Description"
+        android:textSize="17sp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+
+    <carbon.widget.Button
+        android:id="@+id/Upload"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@id/User_pass_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/black"
+        android:text="Upload"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:carbon_cornerRadius="13dp"
+        app:carbon_elevation="8dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+</LinearLayout>

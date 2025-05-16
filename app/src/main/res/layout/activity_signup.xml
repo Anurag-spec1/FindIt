@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".signup">
+
+    <carbon.widget.TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="108dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <carbon.widget.TextView
+        android:id="@+id/signup_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/main_font"
+        android:text="Enter your details below &amp; free signup"
+        android:textColor="#697D87"
+        android:textSize="15sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/User_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_child"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="50dp"
+        android:text="Your Name"
+        android:textColor="#697D87"
+        android:textSize="16sp" />
+
+    <carbon.widget.EditText
+        android:id="@+id/User_name_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/User_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:imeOptions="actionNext"
+        android:paddingStart="15dp"
+        android:hint="Anurag Shrivastav"
+        android:textSize="17sp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+    <carbon.widget.TextView
+        android:id="@+id/User_email_child_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_name_2"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="27dp"
+        android:text="Your Email"
+        android:textColor="#697D87"
+        android:textSize="16sp" />
+
+    <carbon.widget.EditText
+        android:id="@+id/User_email_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/User_email_child_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:hint="anurag@kiet.edu"
+        android:textSize="17sp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+    <carbon.widget.TextView
+        android:id="@+id/User_pass_child_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/User_email_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:text="Password"
+        android:textColor="#697D87"
+        android:textSize="16sp" />
+
+    <carbon.widget.EditText
+        android:id="@+id/User_pass_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/User_pass_child_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:hint="********"
+        android:textSize="17sp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+
+    <carbon.widget.Button
+        android:id="@+id/Button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@id/User_pass_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="#19AEFD"
+        android:text="Create account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:carbon_cornerRadius="13dp"
+        app:carbon_elevation="8dp"
+        app:carbon_elevationShadowColor="@color/carbon_black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button_signup"
+        android:layout_marginStart="50dp"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="38dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+
+        <carbon.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ?"
+            android:fontFamily="@font/main_font"
+            android:textColor="#697D87"
+            android:textSize="16sp" />
+
+        <carbon.widget.TextView
+            android:id="@+id/Login_text_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="Log in"
+            android:textColor="#07A1F6"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
